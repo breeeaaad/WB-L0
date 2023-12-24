@@ -7,6 +7,6 @@ import (
 
 func Router(h *handlers.Handlers) {
 	r := gin.Default()
-	r.GET("/main/order/:order_uid", h.GetOrder)
+	r.GET("/get_order", h.GetOrder)
 	r.Run()
 }
